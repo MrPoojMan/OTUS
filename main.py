@@ -1,10 +1,10 @@
-def numbers(n):
-    res = []
-    for i in n:
-        i = i * i
-        res.append(i)
-    return res
+ODD = "odd"
+EVEN = "even"
+PRIME = "prime"
 
-a = (1, 4, 7, 12)
+def filter_numbers(n, None):
 
-print(numbers(a))
+
+a = [1, 2, 3, 4, 5, 6, 7, 8]
+
+print(filter_numbers(a))
