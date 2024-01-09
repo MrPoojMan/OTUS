@@ -1,10 +1,20 @@
-ODD = "odd"
-EVEN = "even"
-PRIME = "prime"
-
-def filter_numbers(n, None):
+ODD = 'odd'
+EVEN = 'even'
+PRIME = 'prime'
 
 
-a = [1, 2, 3, 4, 5, 6, 7, 8]
+def filter_numbers(n, a):
+    res = []
+    if a == 'even':
+        for i in n:
+            if i % 2 == 0:
+                res.append(i)
+    elif a == 'odd':
+        for i in n:
+            if i % 2 != 0:
+                res.append(i)
+    return res
 
-print(filter_numbers(a))
+a = [1, 2, 3, 4, 5, 6]
+
+print(filter_numbers(a, ODD))
