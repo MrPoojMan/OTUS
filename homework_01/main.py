@@ -23,7 +23,7 @@ ODD = "odd"
 EVEN = "even"
 PRIME = "prime"
 
-def filter_numbers(*n, b):
+def filter_numbers(n, b):
     res = []
     if b == 'even':
         res = list(filter(lambda x: x % 2 == 0, n))
