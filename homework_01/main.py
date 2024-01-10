@@ -39,7 +39,7 @@ def filter_numbers(n, b):
         else:
             if b == 'prime':
                 for i in n:
-                    if is_prime(i) == True:
+                    if is_prime(i):
                         res.append(i)
         return res
 
