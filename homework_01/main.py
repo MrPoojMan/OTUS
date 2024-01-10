@@ -30,7 +30,8 @@ def filter_numbers(n, a):
         for i in n:
             if i % 2 == 0:
                 res.append(i)
-    elif a == 'odd':
+    else:
+        a == 'odd'
         for i in n:
             if i % 2 != 0:
                 res.append(i)
