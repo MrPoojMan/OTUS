@@ -17,7 +17,9 @@ def filter_numbers(n, b):
         res = list(filter(lambda x: x % 2 != 0, n))
     else:
         if b == 'prime':
-            res = list(filter(lambda x: x == 2 or x == 3 or x % 2 and x % 3 != 0, n))
+            for i in n:
+                if is_prime(i) == True:
+                    res.append(i)
     return res
 
 a = range(1, 200)
