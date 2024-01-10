@@ -26,6 +26,6 @@ def filter_numbers(n, b):
                     res.append(i)
     return res
 
-a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 61]
+a = range(1, 200)
 
 print(filter_numbers(a, PRIME))

@@ -30,7 +30,7 @@ def is_prime(a):
     while d * d <= a and a % d != 0:
         d += 2
     return d * d > a
-def filter_numbers(n, b):
+def filter_numbers(*n, b):
     res = []
     if b == 'even':
         for i in n:
@@ -43,7 +43,7 @@ def filter_numbers(n, b):
     else:
         if b == 'prime':
             for i in n:
-                if is_prime(i) == True:
+                if is_prime(i):
                     res.append(i)
     return res
 
