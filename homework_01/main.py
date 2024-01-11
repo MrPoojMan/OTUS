@@ -4,7 +4,7 @@
 """
 
 
-def power_numbers(n):
+def power_numbers(*n):
     res = []
     for i in n:
         i = i * i
@@ -39,6 +39,7 @@ def filter_numbers(n, b):
         elif b == 'odd':
             res = list(filter(lambda x: x % 2 != 0, n))
         else:
+            b == 'prime'
             res = list(filter(is_prime, n))
         return res
 
