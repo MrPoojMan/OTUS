@@ -4,7 +4,7 @@ PRIME = 'prime'
 
 def is_prime(a):
     d = a - 1
-    if d < 0:
+    if d <= 0:
         return False
     while d > 1:
         if a % d == 0:
