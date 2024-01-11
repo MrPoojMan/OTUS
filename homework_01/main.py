@@ -51,6 +51,6 @@ def filter_numbers(n, b):
 
     >>> filter_numbers([1, 2, 3], ODD)
     <<< [1, 3]
-    >>> filter_numbers([2, 3, 4, 5], EVEN)
+    >>> filter_numbers([2,3, 4, 5], EVEN)
     <<< [2, 4]
     """
